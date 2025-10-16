@@ -39,6 +39,6 @@ It features a sleek **Dark and Light Mode UI** with smooth transitions, providin
 **Deployment:**  
 - Vercel  
 
-
+---
 
 
