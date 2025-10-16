@@ -39,10 +39,6 @@ It features a sleek **Dark and Light Mode UI** with smooth transitions, providin
 **Deployment:**  
 - Vercel  
 
----
 
-## 🧑‍💻 Installation & Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+
