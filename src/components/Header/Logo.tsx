@@ -17,7 +17,7 @@ const Logo = () => {
 			/>
 
 			<h1
-				className="text-[22px] font-semibold md:text-[28px]"
+				className="font-primary text-[22px] font-semibold md:text-[28px]"
 				aria-label="WebApp-Name">
 				Portfolio
 				<span className="text-pink-500">.</span>

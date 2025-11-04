@@ -10,7 +10,7 @@ const DesktopNav = () => {
 						key={nav.id}
 						href={nav.urlid}
 						aria-label={nav.matchid}
-						className="hover:text-blue-500 hover:dark:text-blue-300">
+						className="font-primary hover:text-blue-500 hover:dark:text-blue-300">
 						{nav.label}
 					</Link>
 				);
