@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+	--font-primary: --font-ovo, sans-serif;
+	--font-secondary: --font-outfit, sans-serif;
+}
+
 :root {
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);

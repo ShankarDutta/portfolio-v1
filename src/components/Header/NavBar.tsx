@@ -65,7 +65,7 @@ const NavBar = () => {
 								? "bg-transparent dark:border-none"
 								: "bg-white shadow dark:border-white"
 						}`}
-						aria-label="Desktop-Nav-Items">
+						aria-label="Desktop-Nav-Items ">
 						<DesktopNav />
 					</div>
 
@@ -77,7 +77,7 @@ const NavBar = () => {
 
 						<CustomBtn
 							url={{ hash: "#contact" }}
-							className="hidden items-center justify-center hover:border-blue-500 hover:text-blue-500 md:flex hover:dark:border-blue-400 hover:dark:text-blue-400"
+							className="font-secondary hidden items-center justify-center hover:border-blue-500 hover:text-blue-500 md:flex hover:dark:border-blue-400 hover:dark:text-blue-400"
 							aria="Contact-Button">
 							Contact
 							<ArrowUpRight size={18} />

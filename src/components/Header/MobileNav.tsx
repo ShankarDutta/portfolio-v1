@@ -44,7 +44,7 @@ const MobileNav = () => {
 								<button
 									key={nav.id}
 									onClick={() => handleNavClick(nav.matchid)}
-									className="hover:text-blue-500 hover:dark:text-blue-300"
+									className="font-primary hover:text-blue-500 hover:dark:text-blue-300"
 									aria-label={nav.matchid}>
 									{nav.label}
 								</button>
