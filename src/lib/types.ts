@@ -12,9 +12,16 @@ export type NavItemsType = {
 	matchid: string;
 }[];
 
-export type CustomBtnUiType = {
+export type NavigationBtnUiType = {
 	children: ReactNode;
 	url: UrlObject;
 	className?: string;
 	aria: string;
+};
+export type WorkingBtnUiType = {
+	children: ReactNode;
+	url: string;
+	className?: string;
+	aria: string;
+	download?: true;
 };
