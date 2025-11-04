@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import CustomBtn from "../customui/CustomBtn";
+import NavigationBtn from "../customui/NavigationBtn";
 import ThemeToggleButton from "../customui/ThemeToggleButton";
 import DesktopNav from "./DesktopNav";
 import Logo from "./Logo";
@@ -75,13 +75,13 @@ const NavBar = () => {
 						aria-label="toggle & contact">
 						<ThemeToggleButton />
 
-						<CustomBtn
+						<NavigationBtn
 							url={{ hash: "#contact" }}
 							className="font-secondary hidden items-center justify-center hover:border-blue-500 hover:text-blue-500 md:flex hover:dark:border-blue-400 hover:dark:text-blue-400"
 							aria="Contact-Button">
 							Contact
 							<ArrowUpRight size={18} />
-						</CustomBtn>
+						</NavigationBtn>
 
 						{/* Mobile Nav */}
 						<div

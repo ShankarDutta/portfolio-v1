@@ -1,4 +1,4 @@
-import { AuroraText } from "@/components/magicui/aurora-text";
+import Hero from "@/components/Herosection/Hero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,10 +10,8 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<section
-				className="grid h-[70dvh] place-items-center"
-				id="/">
-				<AuroraText className="text-5xl font-bold">Hero</AuroraText>
+			<section className="grid h-[70dvh] place-items-center">
+				<Hero />
 			</section>
 		</>
 	);
