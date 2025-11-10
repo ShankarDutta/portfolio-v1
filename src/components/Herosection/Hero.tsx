@@ -3,12 +3,12 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 
 import WorkingBtn from "../customui/WorkingBtn";
-import { TypingAnimation } from "../shadcnui/typing-animation";
+import { TypingAnimation } from "../magicui/typing-animation";
 
 const Hero = () => {
 	return (
 		<section className="space-y-4 text-center">
-			<div className="relative">
+			<figure className="relative">
 				<Image
 					src={"/profile-picture.jpeg"}
 					alt="Profile-Picture"
@@ -17,7 +17,7 @@ const Hero = () => {
 					loading="eager"
 					className="mx-auto h-[72px] w-[72px] rounded-full object-cover"
 				/>
-			</div>
+			</figure>
 			<h1 className="font-primary text-xl md:text-3xl">
 				Hello! I&apos;m Shankar Dutta
 			</h1>
@@ -39,7 +39,7 @@ const Hero = () => {
 			<div className="flex flex-wrap justify-center gap-3">
 				<WorkingBtn
 					url="mailto:mr.shankardutta@gmail.com"
-					className="font-secondary flex items-center justify-center gap-2 hover:border-blue-500 hover:bg-blue-500 hover:text-white hover:dark:border-blue-500"
+					className="font-secondary flex items-center justify-center gap-2 bg-black text-white hover:border-blue-500 hover:bg-blue-500 hover:text-white dark:bg-white dark:text-black hover:dark:border-blue-500 hover:dark:bg-blue-500 hover:dark:text-white"
 					aria="Mail-Button">
 					Hire Me
 					<FaArrowRightLong size={18} />

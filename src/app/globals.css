@@ -4,8 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-	--font-primary: --font-ovo, sans-serif;
-	--font-secondary: --font-outfit, sans-serif;
+	--font-primary: --font-ovo;
+	--font-secondary: --font-outfit;
 }
 
 :root {
@@ -44,7 +44,7 @@
 }
 
 .dark {
-	--background: oklch(0.145 0 0);
+	--background: oklch(14.28% 0.01979 326.512);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.205 0 0);
 	--card-foreground: oklch(0.985 0 0);
@@ -136,16 +136,18 @@
 			transform: rotate(-5deg) scale(0.9);
 		}
 	}
-	--animate-blink-cursor: blink-cursor 1.2s step-end infinite
-;
-  @keyframes blink-cursor {
-  0%, 49% {
-    opacity: 1;
+	--animate-blink-cursor: blink-cursor 1.2s step-end infinite;
+	@keyframes blink-cursor {
+		0%,
+		49% {
+			opacity: 1;
 		}
-  50%, 100% {
-    opacity: 0;
+		50%,
+		100% {
+			opacity: 0;
 		}
-	}}
+	}
+}
 
 @layer base {
 	* {
@@ -154,4 +156,8 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+}
+
+html {
+	scroll-behavior: smooth;
 }

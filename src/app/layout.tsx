@@ -7,9 +7,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 	return (
 		<html
 			lang="en"
-			suppressHydrationWarning
-			data-scroll-behavior="smooth"
-			className="scroll-smooth">
+			suppressHydrationWarning>
 			<body>
 				<ThemeProvider
 					attribute={"class"}
@@ -18,7 +16,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 					{/* <Header /> */}
 					<NavBar />
 
-					<main className="container mx-auto px-6 py-3">
+					<main className="mx-auto max-w-7xl px-6 py-3">
 						{children}
 					</main>
 				</ThemeProvider>
