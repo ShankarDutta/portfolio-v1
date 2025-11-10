@@ -1,4 +1,6 @@
+import { LucideIcon } from "lucide-react";
 import { ReactNode } from "react";
+import { IconType } from "react-icons/lib";
 import { UrlObject } from "url";
 
 export type RootLayoutProps = Readonly<{
@@ -25,3 +27,13 @@ export type WorkingBtnUiType = {
 	aria: string;
 	download?: true;
 };
+
+export type DetailsCardType = {
+	id: number;
+	icons: LucideIcon | IconType;
+	heading: string;
+	paragraph: string;
+}[];
+
+export type ToolsIconsType = string[];
+export type TechStacksIconsType = string[];

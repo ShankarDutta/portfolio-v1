@@ -1,4 +1,6 @@
+import About from "@/components/Aboutsection/About";
 import Hero from "@/components/Herosection/Hero";
+import TechsCard from "@/components/Techstacksection/TechsCard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,8 +12,27 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<>
-			<section className="grid h-[70dvh] place-items-center">
+			<section
+				className="grid h-[70dvh] place-items-center md:h-[75dvh]"
+				id="#">
 				<Hero />
+			</section>
+
+			<section
+				className="pt-18 md:pt-22"
+				id="about-me">
+				<About />
+			</section>
+			<section
+				aria-label="My-TechStack"
+				className="pt-20 text-center">
+				<h1 className="font-primary text-4xl font-bold">
+					My Tech Stack
+				</h1>
+				<p className="font-secondary text-lg text-black/70 dark:text-white/70">
+					Technologies I’ve been working with recently
+				</p>
+				<TechsCard />
 			</section>
 		</>
 	);
