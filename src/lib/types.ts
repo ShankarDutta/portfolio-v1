@@ -36,4 +36,15 @@ export type DetailsCardType = {
 }[];
 
 export type ToolsIconsType = string[];
+
 export type TechStacksIconsType = string[];
+
+export type ProjectsDetailsType = {
+	id: number;
+	img: string;
+	prjectName: string;
+	projectDescription: string;
+	githubRepoLink: string;
+	liveLink: string;
+	techStacks: string[];
+}[];

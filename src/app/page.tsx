@@ -1,5 +1,7 @@
 import About from "@/components/Aboutsection/About";
 import Hero from "@/components/Herosection/Hero";
+import { LightRays } from "@/components/magicui/light-rays";
+import ProjectSec from "@/components/MyProjects/ProjectSec";
 import TechsCard from "@/components/Techstacksection/TechsCard";
 import { Metadata } from "next";
 
@@ -16,6 +18,7 @@ const page = () => {
 				className="grid h-[70dvh] place-items-center md:h-[75dvh]"
 				id="#">
 				<Hero />
+				<LightRays />
 			</section>
 
 			<section
@@ -29,10 +32,16 @@ const page = () => {
 				<h1 className="font-primary text-4xl font-bold">
 					My Tech Stack
 				</h1>
-				<p className="font-secondary text-lg text-black/70 dark:text-white/70">
+				<p className="font-secondary pt-2 text-lg text-black/70 dark:text-white/70">
 					Technologies I’ve been working with recently
 				</p>
 				<TechsCard />
+			</section>
+
+			<section
+				className="pt-20"
+				id="my-projects">
+				<ProjectSec />
 			</section>
 		</>
 	);

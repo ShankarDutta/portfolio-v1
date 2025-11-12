@@ -7,7 +7,7 @@ const DetailsCard = () => {
 			{detailsCardData.map((datas) => (
 				<Card
 					key={datas.id}
-					className="w-auto">
+					className="w-auto py-6">
 					<CardHeader>
 						<CardTitle className="w-[50] rounded-lg bg-[#FF388B] p-3 text-white">
 							<datas.icons />
